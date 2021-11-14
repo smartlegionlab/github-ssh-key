@@ -6,4 +6,4 @@
 # All rights reserved.
 # --------------------------------------------------------
 """Github ssh key manager."""
-__version__ = '0.1.3'
+__version__ = '0.1.4'

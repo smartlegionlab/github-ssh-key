@@ -50,10 +50,9 @@ Author and developer: ___A.A Suvorov___
 
 ## What's new?
 
-### ___github-ssh-key v0.1.3___
+### ___github-ssh-key v0.1.4___
 
-- Added a new method and menu item to launch the default browser and open a link to GitHub keys.
-- Added a new command `github`, for launch default browser, and open [https://github.com/settings/keys](https://github.com/settings/keys).
+- Go to new version [smartcliapp](https://github.com/smartlegionlab/smartcliapp)
 
 ***
 
@@ -93,6 +92,7 @@ To access GitHub over ssh, you should run some sequence of actions.
 - Copy the public key;
 - Add your public key to GitHub;
 - Check the connection;
+- Open page `https://github.com/settings/keys` in the default browser.
 
 This utility provides you with these capabilities.
 
@@ -132,6 +132,7 @@ To get help with commands, use:
 `github-ssh-key show -h`
 `github-ssh-key test -h`
 `github-ssh-key clone -h`
+`github-ssh-key github -h`
 
 
 #### Commands:
@@ -143,6 +144,7 @@ To get help with commands, use:
 - show `github-ssh-key show`
 - test `github-ssh-key test`
 - clone `github-ssh-key clone -l [GitHub login] -n [repo name]`
+- github `github-ssh-key github`
 
 
 #### Variant 1:

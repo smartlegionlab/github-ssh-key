@@ -6,7 +6,7 @@
 # All rights reserved.
 # --------------------------------------------------------
 from github_ssh_key import __version__
-from smartcliapp.informers import Informer
+from smartcliapp import Informer
 
 from github_ssh_key.commander import Commander
 
