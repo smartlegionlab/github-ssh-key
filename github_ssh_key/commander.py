@@ -87,7 +87,7 @@ class Commander:
         path = f'{Path.home()}/.ssh/id_ed25519.pub'
         key = self._get_key()
         self._cli_man.printer.smart.echo('Show ssh public key:')
-        self._cli_man.printer.base.echo('Highlight and completely copy your ssh key.')
+        self._cli_man.printer.base.echo('\nHighlight and completely copy your ssh key.')
         if key:
             self._cli_man.printer.base.echo()
             self._cli_man.printer.base.echo(key)
@@ -135,9 +135,9 @@ class Commander:
 
     def open_help(self):
         while True:
-            self._cli_man.printer.smart.echo('Help url: https://github.com/smartlegionlab/github-ssh-key')
             self._cli_man.printer.smart.echo('Help:')
-            self._cli_man.printer.smart.echo('Adding a key to your GitHub account involves several steps:')
+            self._cli_man.printer.base.echo('Configuring GitHub over SSH:')
+            self._cli_man.printer.smart.echo()
             self._cli_man.printer.base.echo('g: generating new ssh key.')
             self._cli_man.printer.base.echo('c: copying ssh key.')
             self._cli_man.printer.base.echo('a: adding ssh key to your GitHub account.')
@@ -147,6 +147,7 @@ class Commander:
             char = click.getchar()
 
             if char in ('b', 'и'):
+                self._cli_man.printer.base.echo('Help url: https://github.com/smartlegionlab/github-ssh-key')
                 break
 
             if char in ('g', 'п'):

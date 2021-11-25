@@ -50,14 +50,9 @@ Author and developer: ___A.A Suvorov___
 
 ## What's new?
 
-### ___github-ssh-key v0.2.0___
+### ___github-ssh-key v0.2.1___
 
-- Fixed bugs.
-- Added interactive help menu.
-- Changed interface.
-- Changed some commands.
-- A more complete description of working with the utility and 
-working with ssh keys in general has been added.
+- Minor bugs fixed.
 
 ***
 

@@ -2,4 +2,4 @@ wheel
 build
 tox
 click~=8.0.1
-smartcliapp~=0.2.0
+smartcliapp~=0.3.0
