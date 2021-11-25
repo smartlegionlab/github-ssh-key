@@ -50,9 +50,14 @@ Author and developer: ___A.A Suvorov___
 
 ## What's new?
 
-### ___github-ssh-key v0.1.4___
+### ___github-ssh-key v0.2.0___
 
-- Go to new version [smartcliapp](https://github.com/smartlegionlab/smartcliapp)
+- Fixed bugs.
+- Added interactive help menu.
+- Changed interface.
+- Changed some commands.
+- A more complete description of working with the utility and 
+working with ssh keys in general has been added.
 
 ***
 
@@ -63,13 +68,15 @@ testing, using public ssh keys for GitHub.
 
 Possibilities:
 
-- Generating ssh keys for GitHub;
-- Output ssh key to the console;
-- Checking the ssh key, testing the connection;
-- Interactive menu for working with the utility;
-- Launch the default browser with a page for adding ssh key on GitHub;
-- Cloning private repositories via ssh;
-
+- Generating ssh keys for GitHub.
+- Output ssh key to the console.
+- Добавление ssh ключа на GitHub.
+- Checking the ssh key, testing the connection.
+- Interactive menu for working with the utility.
+- Interactive menu for help.
+- Launch the default browser with a page for adding ssh key on GitHub.
+- Cloning private repositories via ssh.
+- Running individual commands.
 
 ***
 
@@ -81,9 +88,9 @@ Possibilities:
 
 `pip3 install github-ssh-key`
 
-#### Use:
-
 `github-ssh-key`
+
+#### Use:
 
 To access GitHub over ssh, you should run some sequence of actions.
 
@@ -92,33 +99,27 @@ To access GitHub over ssh, you should run some sequence of actions.
 - Copy the public key;
 - Add your public key to GitHub;
 - Check the connection;
-- Open page `https://github.com/settings/keys` in the default browser.
 
 This utility provides you with these capabilities.
 
-Principle of operation:
+Adding a key to your GitHub account involves several steps:
 
-- Create a new key using the interactive menu.
- During the creation process, do not change the default file name,
- since the utility is currently configured to work with the name
- file by default.
-
-Your keys will be stored in the folder: ~/.ssh/
-
-- Next, you will be prompted to add your key to your GitHub account.
- Answer in the affirmative.
-
-- Your key will be displayed in the console, copy it.
-
-- After that, you will be prompted to open the page for adding a key.
- The default browser will open with a page for adding a key.
-
-- Upload the copied key to GitHub.
-
-Go back to the console and select test the key.
-
-- Test the connection. If you see a greeting, then
- everything works correctly.
+1. Generating new ssh key.
+   - Install openssh, or make sure you have it installed with the ssh command.
+   - During the generation process, enter your email that you use when working with GitHub.
+   - Do not change the default file name.
+   - Don't set a passphrase if you don't want to enter it every time.
+2. Copying ssh key.
+   - Highlight and completely copy your ssh key.
+3. Adding ssh key to your GitHub account.
+   - Highlight and completely copy your ssh key.
+   - Add your ssh key to your GitHub account.
+4. Testing the ssh key (Testing the connection).
+   - For a successful connection, you had to follow these steps:
+     - Generate ssh key.
+     - Highlight and completely copy your ssh key.
+     - Add ssh key to your GitHub account.
+     - If you did everything correctly, you will see a personalized greeting.
 
 Also, directly from the interactive menu, you can clone your private
 repository using ssh.
@@ -127,13 +128,12 @@ To get help with commands, use:
 
 `github-ssh-key [command] -h`
 
-`github-ssh-key run -h`
 `github-ssh-key new -h`
 `github-ssh-key show -h`
+`github-ssh-key add -h`
 `github-ssh-key test -h`
 `github-ssh-key clone -h`
-`github-ssh-key github -h`
-
+`github-ssh-key help -h`
 
 #### Commands:
 
@@ -142,9 +142,9 @@ To get help with commands, use:
 - run `github-ssh-key run`
 - new `github-ssh-key new -e [your email]`
 - show `github-ssh-key show`
+- add `github-ssh-key add`
 - test `github-ssh-key test`
 - clone `github-ssh-key clone -l [GitHub login] -n [repo name]`
-- github `github-ssh-key github`
 
 
 #### Variant 1:
@@ -152,13 +152,6 @@ To get help with commands, use:
 - Go to the project folder
 - `python3 setup.py install`
 - `github-ssh-key`
-- `github-ssh-key -h`
-- `github-ssh-key run`
-- `github-ssh-key new -e [your email]`
-- `github-ssh-key show`
-- `github-ssh-key test`
-- `github-ssh-key clone -l [your login from github] -n [github repository name for cloning]`
-
 
 #### Variant 2:
 
@@ -166,12 +159,6 @@ To get help with commands, use:
 - Go to the project folder
 - `pip3 install -r requirements.txt`
 - `python3 github-ssh-key.py`
-- `python3 github-ssh-key.py -h`
-- `python3 github-ssh-key.py run`
-- `python3 github-ssh-key.py new -e [your email]`
-- `python3 github-ssh-key.py show`
-- `python3 github-ssh-key.py test`
-- `python3 github-ssh-key.py clone -l [your login from github] -n [github repository name for cloning]`
 
 ***
 
