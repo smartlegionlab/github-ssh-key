@@ -50,9 +50,10 @@ Author and developer: ___A.A Suvorov___
 
 ## What's new?
 
-### ___github-ssh-key v0.2.1___
+### ___github-ssh-key v0.3.0___
 
-- Minor bugs fixed.
+- Improved work with help, added the ability to run commands directly from help.
+- Improved interface.
 
 ***
 
@@ -63,9 +64,10 @@ testing, using public ssh keys for GitHub.
 
 Possibilities:
 
+- Convenient interactive menu.
 - Generating ssh keys for GitHub.
 - Output ssh key to the console.
-- Добавление ssh ключа на GitHub.
+- Adding ssh key to GitHub.
 - Checking the ssh key, testing the connection.
 - Interactive menu for working with the utility.
 - Interactive menu for help.

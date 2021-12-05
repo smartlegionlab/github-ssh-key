@@ -14,7 +14,7 @@ from smartcliapp import Informer
 from github_ssh_key.commander import Commander
 
 
-class CliMan(Informer):
+class CliManager(Informer):
     commander = Commander()
     name = "github-ssh-key"
     title = "Smart Legion Lab"
