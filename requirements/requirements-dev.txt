@@ -1,0 +1,5 @@
+wheel
+build
+tox
+click~=8.0.1
+smartcliapp~=0.4.0
