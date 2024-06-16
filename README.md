@@ -1,4 +1,4 @@
-# github-ssh-key
+# github-ssh-key <sup>v0.4.1</sup>
 ___github-ssh-key___ - GitHub ssh key manager. Console utility for creating, getting, testing, 
 using public ssh keys for GitHub.
 ***
@@ -15,7 +15,7 @@ using public ssh keys for GitHub.
 
 ***
 
-Author and developer: ___A.A Suvorov___
+Author and developer: ___A.A. Suvorov___
 
 ***
 
@@ -162,6 +162,6 @@ To get help with commands, use:
     --------------------------------------------------------
     Licensed under the terms of the BSD 3-Clause License
     (see LICENSE for details).
-    Copyright © 2018-2024, A.A Suvorov
+    Copyright © 2018-2024, A.A. Suvorov
     All rights reserved.
     --------------------------------------------------------
