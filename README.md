@@ -3,6 +3,7 @@ ___github-ssh-key___ - GitHub ssh key manager. Console utility for creating, get
 using public ssh keys for GitHub.
 ***
 
+[![PyPI Downloads](https://static.pepy.tech/badge/github-ssh-key)](https://pepy.tech/projects/github-ssh-key)
 ![GitHub top language](https://img.shields.io/github/languages/top/smartlegionlab/github-ssh-key)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/github-ssh-key?label=pypi%20downloads)](https://pypi.org/project/github-ssh-key/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/smartlegionlab/github-ssh-key)](https://github.com/smartlegionlab/github-ssh-key/)
