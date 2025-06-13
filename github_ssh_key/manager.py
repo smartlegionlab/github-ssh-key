@@ -1,7 +1,7 @@
 # --------------------------------------------------------
 # Licensed under the terms of the BSD 3-Clause License
 # (see LICENSE for details).
-# Copyright © 2018-2024, A.A. Suvorov
+# Copyright © 2018-2025, A.A. Suvorov
 # All rights reserved.
 # --------------------------------------------------------
 # https://github.com/smartlegionlab
@@ -18,5 +18,5 @@ class CliManager(Informer):
     title = "Smart Legion Lab"
     description = "Github Ssh Key Manager"
     url = "https://github.com/smartlegionlab"
-    copyright = "Copyright © 2018-2024, A.A. Suvorov"
+    copyright = "Copyright © 2018-2025, A.A. Suvorov"
     version = __version__
